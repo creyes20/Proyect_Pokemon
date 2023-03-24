@@ -1,0 +1,92 @@
+.main-container {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.main-container-aside {
+    height: 71vh;
+    width: 20vw;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.main-container-aside h1 {
+    font-size: 33px;
+}
+
+
+
+
+.aside-button {
+
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3748;
+    border: 1px solid #cbd5e0;
+    line-height: 26px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+
+}
+
+.asideUl {
+    list-style: none;
+    padding: 10px;
+}
+
+.asideLi {
+    margin: 10px;
+
+}
+
+@media only screen and (max-width: 706px) {
+
+    .main-container {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+
+
+
+    }
+
+    .main-container-aside {
+        height: 22vh;
+        width: 95vw;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .asideUl {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .asideLi {
+    text-align: center;
+    white-space: nowrap;
+      
+    }
+
+
+
+}
